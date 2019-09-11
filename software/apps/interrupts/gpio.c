@@ -23,7 +23,7 @@ void gpio_config(uint8_t gpio_num, gpio_direction_t dir) {
   if (dir == OUTPUT) {
     gpio->DIRECT |= 1 << gpio_num;
   } else {
-    gpio->PIN_CNF[gpio_num] = 0x00020000;
+    gpio->PIN_CNF[gpio_num] = 0x00020000;  
   }
 }
 
